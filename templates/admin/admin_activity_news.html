@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข่าวสารกิจกรรม</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .action-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-links a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .edit {
+            background-color: #ffc107;
+            color: #333;
+        }
+
+        .delete {
+            background-color: #dc3545;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="{% url 'admin_edit' %}" class="action-links">หน้าแรก</a>
+        <h1>ข่าวสารกิจกรรม</h1>
+        <a href="{% url 'add_activity_news' %}" class="action-links">เพิ่มข่าวสารกิจกรรม</a>
+        <ul>
+            {% for activity_news in activity_news %}
+                <li>
+                    {{ activity_news.id }} {{ activity_news.text }}
+                    <div class="action-links">
+                        <a href="{% url 'edit_activity_news' activity_news.id %}" class="edit">แก้ไข</a>
+                        <a href="{% url 'delete_activity_news' activity_news.id %}" class="delete">ลบ</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

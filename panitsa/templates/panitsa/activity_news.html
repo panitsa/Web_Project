@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข่าวสารและกิจกรรม</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f7f7f7; 
+            padding: 30px; 
+            font-family: 'Arial', sans-serif; 
+        }
+        h1 {
+            color: #333;
+        }
+        .news-container {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex-wrap: wrap;
+        }
+        .news-item {
+            margin: 10px;
+            padding: 20px; 
+            background-color: #fff; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            text-align: left; 
+            max-width: 300px; 
+        }
+        img {
+            max-width: 40%;
+            margin-bottom: 10px;
+            height: auto; 
+            border-radius: 4px; 
+        }
+        p { 
+            font-size: 18px; 
+            line-height: 1.4; 
+        }
+        @media screen and (max-width: 600px) 
+    </style>
+
+</head>
+<a href="{% url 'home' %}" class="action-links">หน้าแรก</a>
+<body>
+    <h1>ข่าวสารกิจกรรม</h1>
+    {% for activity_news in activity_news %}
+    <div>
+        <img src="{{ activity_news.image.url }}" alt="{{ activity_news.text }}">
+        {% if activity_news.image1 %}
+            <img src="{{ activity_news.image1.url }}" alt="{{ activity_news.text }}">
+        {% endif %}
+        <p>{{ activity_news.text }}</p>
+        <p>วันที่: {{ activity_news.date|date:"j/n/Y" }} | เวลา: {{ activity_news.time|time:"G:i" }}</p>
+    </div>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>แชทเรื่องทั่วไป</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .action-links {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .chat-container {
+            margin-bottom: 80px;
+        }
+        .message {
+            clear: both;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 60%;
+            position: relative;
+            word-wrap: break-word;
+        }
+        .user-message {
+            background-color: #f9f9f9;
+            text-align: right;
+            float: right;
+        }
+        .admin-message {
+            background-color: #e1f5fe;
+            text-align: left;
+            float: left;
+        }
+        .message-content {
+            padding-bottom: 10px;
+        }
+        .user-message img {
+            max-width: 50%;
+            float: right;
+            display: block;
+            margin-top: 10px;
+        }
+        .admin-message img {
+            max-width: 50%;
+            float: left;
+            display: block;
+            margin-top: 10px;
+        }
+        .message small {
+            display: block;
+            font-size: 10px;
+            color: #888;
+            text-align: right;
+            margin-top: 5px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .form-container {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="{% url 'chat_report' %}" class="action-links">เลือกประเภทเรื่อง</a>
+    <div class="chat-container">
+        <h1>เรื่องทั่วไป</h1>
+        {% if messages %}
+            {% for message in messages %}
+                <div class="message {% if message.admin_message %}admin-message{% else %}user-message{% endif %} clearfix">
+                    <div class="message-content">
+                        {{ message.message }}
+                        {% if message.image %}
+                            <br><img src="{{ message.image.url }}" alt="Uploaded Image">
+                        {% endif %}
+                    </div>
+                    <small>{{ message.timestamp }}</small>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="form-container">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" name="category" value="general" class="button">ส่ง</button>
+        </form>
+    </div>
+</body>
+</html>

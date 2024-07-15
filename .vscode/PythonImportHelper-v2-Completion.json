@@ -1,0 +1,894 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "django.contrib.auth.views",
+        "description": "django.contrib.auth.views",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "django.contrib.auth.views",
+        "description": "django.contrib.auth.views",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "django.contrib.auth.views",
+        "description": "django.contrib.auth.views",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "django.views.generic.detail",
+        "description": "django.views.generic.detail",
+        "isExtraImport": true,
+        "detail": "django.views.generic.detail",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "CustomLoginView",
+        "importPath": "projectWeb.admin",
+        "description": "projectWeb.admin",
+        "isExtraImport": true,
+        "detail": "projectWeb.admin",
+        "documentation": {}
+    },
+    {
+        "label": "EditView",
+        "importPath": "projectWeb.admin",
+        "description": "projectWeb.admin",
+        "isExtraImport": true,
+        "detail": "projectWeb.admin",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "panitsa.migrations.0001_initial",
+        "description": "panitsa.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Activity_news',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('image', models.ImageField(upload_to='news_images/')),",
+        "detail": "panitsa.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "panitsa.migrations.0002_villagepublic",
+        "description": "panitsa.migrations.0002_villagepublic",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('panitsa', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Villagepublic',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('image', models.ImageField(upload_to='Villagepublic_images/')),",
+        "detail": "panitsa.migrations.0002_villagepublic",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "panitsa.migrations.0003_activity_news_image1_alter_activity_news_image",
+        "description": "panitsa.migrations.0003_activity_news_image1_alter_activity_news_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('panitsa', '0002_villagepublic'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='activity_news',\n            name='image1',\n            field=models.ImageField(blank=True, null=True, upload_to='images/'),\n        ),",
+        "detail": "panitsa.migrations.0003_activity_news_image1_alter_activity_news_image",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "panitsa.migrations.0004_income_expenses",
+        "description": "panitsa.migrations.0004_income_expenses",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('panitsa', '0003_activity_news_image1_alter_activity_news_image'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Income_expenses',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('date', models.DateField()),",
+        "detail": "panitsa.migrations.0004_income_expenses",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "panitsa.migrations.0005_auto_20240124_1351",
+        "description": "panitsa.migrations.0005_auto_20240124_1351",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('panitsa', '0004_income_expenses'),\n    ]\n    operations = [\n    ]",
+        "detail": "panitsa.migrations.0005_auto_20240124_1351",
+        "documentation": {}
+    },
+    {
+        "label": "RepresentativeAdmin",
+        "kind": 6,
+        "importPath": "panitsa.admin",
+        "description": "panitsa.admin",
+        "peekOfCode": "class RepresentativeAdmin(admin.ModelAdmin):\n    list_display = ('image', 'first_name', 'last_name', 'position', 'phone_number')\n    list_display_links = ('image', 'first_name', 'last_name', 'position', 'phone_number')\nadmin.site.register(Representative, RepresentativeAdmin)\nclass Activity_newsAdmin(admin.ModelAdmin):\n    list_display = ('image', 'text', 'date', 'time')\n    search_fields = ('image', 'text', 'date', 'time')\nadmin.site.register(Activity_news, Activity_newsAdmin)\nclass VillagepublicAdmin(admin.ModelAdmin):\n    list_display = ('image', 'first_name', 'last_name', 'position', 'phone_number')",
+        "detail": "panitsa.admin",
+        "documentation": {}
+    },
+    {
+        "label": "Activity_newsAdmin",
+        "kind": 6,
+        "importPath": "panitsa.admin",
+        "description": "panitsa.admin",
+        "peekOfCode": "class Activity_newsAdmin(admin.ModelAdmin):\n    list_display = ('image', 'text', 'date', 'time')\n    search_fields = ('image', 'text', 'date', 'time')\nadmin.site.register(Activity_news, Activity_newsAdmin)\nclass VillagepublicAdmin(admin.ModelAdmin):\n    list_display = ('image', 'first_name', 'last_name', 'position', 'phone_number')\n    search_fields = ('image', 'first_name', 'last_name', 'position', 'phone_number')\nadmin.site.register(Villagepublic, VillagepublicAdmin)\nclass Income_expensesAdmin(admin.ModelAdmin):\n    list_display = ('date','time', 'income', 'expenses', 'image')",
+        "detail": "panitsa.admin",
+        "documentation": {}
+    },
+    {
+        "label": "VillagepublicAdmin",
+        "kind": 6,
+        "importPath": "panitsa.admin",
+        "description": "panitsa.admin",
+        "peekOfCode": "class VillagepublicAdmin(admin.ModelAdmin):\n    list_display = ('image', 'first_name', 'last_name', 'position', 'phone_number')\n    search_fields = ('image', 'first_name', 'last_name', 'position', 'phone_number')\nadmin.site.register(Villagepublic, VillagepublicAdmin)\nclass Income_expensesAdmin(admin.ModelAdmin):\n    list_display = ('date','time', 'income', 'expenses', 'image')\n    search_fields = ('date','time', 'income', 'expenses', 'image')\nadmin.site.register(Income_expenses, Income_expensesAdmin)",
+        "detail": "panitsa.admin",
+        "documentation": {}
+    },
+    {
+        "label": "Income_expensesAdmin",
+        "kind": 6,
+        "importPath": "panitsa.admin",
+        "description": "panitsa.admin",
+        "peekOfCode": "class Income_expensesAdmin(admin.ModelAdmin):\n    list_display = ('date','time', 'income', 'expenses', 'image')\n    search_fields = ('date','time', 'income', 'expenses', 'image')\nadmin.site.register(Income_expenses, Income_expensesAdmin)",
+        "detail": "panitsa.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PanitsaConfig",
+        "kind": 6,
+        "importPath": "panitsa.apps",
+        "description": "panitsa.apps",
+        "peekOfCode": "class PanitsaConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'panitsa'",
+        "detail": "panitsa.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AdminLoginForm",
+        "kind": 6,
+        "importPath": "panitsa.forms",
+        "description": "panitsa.forms",
+        "peekOfCode": "class AdminLoginForm(forms.Form):\n    username = forms.CharField(label='ชื่อผู้ใช้', max_length=100)\n    password = forms.CharField(label='รหัสผ่าน', widget=forms.PasswordInput)\nclass RepresentativeForm(forms.ModelForm):\n    class Meta:\n        model = Representative\n        fields = ['image', 'first_name', 'last_name', 'position', 'phone_number']\nclass Activity_newsForm(forms.ModelForm):\n    class Meta:\n        model = Activity_news",
+        "detail": "panitsa.forms",
+        "documentation": {}
+    },
+    {
+        "label": "RepresentativeForm",
+        "kind": 6,
+        "importPath": "panitsa.forms",
+        "description": "panitsa.forms",
+        "peekOfCode": "class RepresentativeForm(forms.ModelForm):\n    class Meta:\n        model = Representative\n        fields = ['image', 'first_name', 'last_name', 'position', 'phone_number']\nclass Activity_newsForm(forms.ModelForm):\n    class Meta:\n        model = Activity_news\n        fields = ['text', 'date', 'time', 'image', 'image1']\n        widgets = {\n            'date': forms.DateInput(attrs={'type': 'date'}),",
+        "detail": "panitsa.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Activity_newsForm",
+        "kind": 6,
+        "importPath": "panitsa.forms",
+        "description": "panitsa.forms",
+        "peekOfCode": "class Activity_newsForm(forms.ModelForm):\n    class Meta:\n        model = Activity_news\n        fields = ['text', 'date', 'time', 'image', 'image1']\n        widgets = {\n            'date': forms.DateInput(attrs={'type': 'date'}),\n            'time': forms.TimeInput(attrs={'type': 'time'}),\n            'image': forms.ClearableFileInput(),\n            'image1': forms.ClearableFileInput(),\n        }",
+        "detail": "panitsa.forms",
+        "documentation": {}
+    },
+    {
+        "label": "VillagepublicForm",
+        "kind": 6,
+        "importPath": "panitsa.forms",
+        "description": "panitsa.forms",
+        "peekOfCode": "class VillagepublicForm(forms.ModelForm):\n    class Meta:\n        model = Villagepublic\n        fields = ['image', 'first_name', 'last_name', 'position', 'phone_number']\nclass Income_expensesForm(forms.ModelForm):\n    class Meta:\n        model = Income_expenses\n        fields = ['date', 'time', 'income','expenses','image' ]\n        widgets = {\n            'date': forms.DateInput(attrs={'type': 'date'}),",
+        "detail": "panitsa.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Income_expensesForm",
+        "kind": 6,
+        "importPath": "panitsa.forms",
+        "description": "panitsa.forms",
+        "peekOfCode": "class Income_expensesForm(forms.ModelForm):\n    class Meta:\n        model = Income_expenses\n        fields = ['date', 'time', 'income','expenses','image' ]\n        widgets = {\n            'date': forms.DateInput(attrs={'type': 'date'}),\n            'time': forms.TimeInput(attrs={'type': 'time'}),\n        }",
+        "detail": "panitsa.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Representative",
+        "kind": 6,
+        "importPath": "panitsa.models",
+        "description": "panitsa.models",
+        "peekOfCode": "class Representative(models.Model):\n    image = models.ImageField(upload_to='Representative_images/')\n    first_name = models.CharField(max_length=100)\n    last_name = models.CharField(max_length=100)\n    position = models.CharField(max_length=100)\n    phone_number = models.CharField(max_length=15)\nclass Activity_news(models.Model):\n    image = models.ImageField(upload_to='images/')\n    image1 = models.ImageField(upload_to='images/', blank=True, null=True)\n    text = models.TextField()",
+        "detail": "panitsa.models",
+        "documentation": {}
+    },
+    {
+        "label": "Activity_news",
+        "kind": 6,
+        "importPath": "panitsa.models",
+        "description": "panitsa.models",
+        "peekOfCode": "class Activity_news(models.Model):\n    image = models.ImageField(upload_to='images/')\n    image1 = models.ImageField(upload_to='images/', blank=True, null=True)\n    text = models.TextField()\n    time = models.TimeField()\n    date = models.DateField()\nclass Villagepublic(models.Model):\n    image = models.ImageField(upload_to='Villagepublic_images/')\n    first_name = models.CharField(max_length=100)\n    last_name = models.CharField(max_length=100)",
+        "detail": "panitsa.models",
+        "documentation": {}
+    },
+    {
+        "label": "Villagepublic",
+        "kind": 6,
+        "importPath": "panitsa.models",
+        "description": "panitsa.models",
+        "peekOfCode": "class Villagepublic(models.Model):\n    image = models.ImageField(upload_to='Villagepublic_images/')\n    first_name = models.CharField(max_length=100)\n    last_name = models.CharField(max_length=100)\n    position = models.CharField(max_length=100)\n    phone_number = models.CharField(max_length=15)\nclass Income_expenses(models.Model):\n    date = models.DateField()\n    time = models.TimeField()\n    income = models.TextField()",
+        "detail": "panitsa.models",
+        "documentation": {}
+    },
+    {
+        "label": "Income_expenses",
+        "kind": 6,
+        "importPath": "panitsa.models",
+        "description": "panitsa.models",
+        "peekOfCode": "class Income_expenses(models.Model):\n    date = models.DateField()\n    time = models.TimeField()\n    income = models.TextField()\n    expenses = models.TextField()\n    image = models.ImageField(upload_to='Income_expenses_images/')",
+        "detail": "panitsa.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "panitsa.urls",
+        "description": "panitsa.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', welcome, name='welcome'), \n    path('representative/', representative, name='representative'),\n    path('activity_news/', activity_news, name='activity_news'),\n    path('report_issue/', report_issue, name='report_issue'),\n    path('Income_expenses/', income_expenses, name='income_expenses'),\n    path('Donation_reportform/', donation_reportform, name='donation_reportform'),\n    path('admin/login/', LoginView.as_view(), name='admin_login'),\n    path('admin/logout/', LogoutView.as_view(), name='admin_logout'),\n    path('admin/add_representative/', add_representative, name='add_representative'),",
+        "detail": "panitsa.urls",
+        "documentation": {}
+    },
+    {
+        "label": "welcome",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def welcome(request):\n    return render(request, 'panitsa/home.html')\ndef representative(request):\n    representatives = Representative.objects.all().order_by('id')[:3]\n    asom_representatives = Villagepublic.objects.all()[:10]\n    print(\"Representatives:\", representatives)\n    print(\"Asom Representatives:\", asom_representatives)\n    return render(request, 'panitsa/representative.html', {'representatives': representatives, 'asom_representatives': asom_representatives})\ndef activity_news(request):\n    activity_news = Activity_news.objects.all()",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "representative",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def representative(request):\n    representatives = Representative.objects.all().order_by('id')[:3]\n    asom_representatives = Villagepublic.objects.all()[:10]\n    print(\"Representatives:\", representatives)\n    print(\"Asom Representatives:\", asom_representatives)\n    return render(request, 'panitsa/representative.html', {'representatives': representatives, 'asom_representatives': asom_representatives})\ndef activity_news(request):\n    activity_news = Activity_news.objects.all()\n    return render(request, 'panitsa/activity_news.html',{'activity_news':activity_news})\ndef report_issue(request):",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "activity_news",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def activity_news(request):\n    activity_news = Activity_news.objects.all()\n    return render(request, 'panitsa/activity_news.html',{'activity_news':activity_news})\ndef report_issue(request):\n    return render(request, 'panitsa/report_issue.html')\ndef income_expenses(request):\n    income_expenses = Income_expenses.objects.all()\n    return render(request, 'panitsa/income_expenses.html',{'income_expenses':income_expenses})\ndef donation_reportform(request):\n    return render(request, 'panitsa/donation_report.html')",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "report_issue",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def report_issue(request):\n    return render(request, 'panitsa/report_issue.html')\ndef income_expenses(request):\n    income_expenses = Income_expenses.objects.all()\n    return render(request, 'panitsa/income_expenses.html',{'income_expenses':income_expenses})\ndef donation_reportform(request):\n    return render(request, 'panitsa/donation_report.html')\ndef admin_login(request):\n    if request.method == 'POST':\n        form = AdminLoginForm(request.POST)",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "income_expenses",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def income_expenses(request):\n    income_expenses = Income_expenses.objects.all()\n    return render(request, 'panitsa/income_expenses.html',{'income_expenses':income_expenses})\ndef donation_reportform(request):\n    return render(request, 'panitsa/donation_report.html')\ndef admin_login(request):\n    if request.method == 'POST':\n        form = AdminLoginForm(request.POST)\n        if form.is_valid():\n            username = form.cleaned_data['username']",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "donation_reportform",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def donation_reportform(request):\n    return render(request, 'panitsa/donation_report.html')\ndef admin_login(request):\n    if request.method == 'POST':\n        form = AdminLoginForm(request.POST)\n        if form.is_valid():\n            username = form.cleaned_data['username']\n            password = form.cleaned_data['password']\n            user = authenticate(request, username=username, password=password)\n            if user is not None:",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "admin_login",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def admin_login(request):\n    if request.method == 'POST':\n        form = AdminLoginForm(request.POST)\n        if form.is_valid():\n            username = form.cleaned_data['username']\n            password = form.cleaned_data['password']\n            user = authenticate(request, username=username, password=password)\n            if user is not None:\n                login(request, user)\n                return redirect('admin_edit_view') ",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_view",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def edit_view(request):\n    representative = Representative.objects.first()  \n    villagepublic = Villagepublic.objects.first()\n    activity_news = Activity_news.objects.first()\n    income_expenses = Income_expenses.objects.first()\n    return render(request, 'admin/add_edit.html', {'representative': representative, 'villagepublic': villagepublic, 'activity_news': activity_news, 'income_expenses':income_expenses})\ndef add_representative(request):\n    if request.method == 'POST':\n        form = RepresentativeForm(request.POST, request.FILES)\n        if form.is_valid():",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_representative",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def add_representative(request):\n    if request.method == 'POST':\n        form = RepresentativeForm(request.POST, request.FILES)\n        if form.is_valid():\n            form.save()\n            return redirect('representative')  \n    else:\n        form = RepresentativeForm()\n    return render(request, 'admin/add_representative.html', {'form': form})\ndef add_activity_news(request):",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_activity_news",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def add_activity_news(request):\n    if request.method == 'POST':\n        form = Activity_newsForm(request.POST, request.FILES)\n        if form.is_valid():\n            form.save()\n            return redirect('activity_news')\n    else:\n        form = Activity_newsForm()\n    return render(request, 'admin/add_activity_news.html',  {'form': form})\ndef add_villagepublic(request):",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_villagepublic",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def add_villagepublic(request):\n    if request.method == 'POST':\n        form = VillagepublicForm(request.POST, request.FILES)\n        if form.is_valid():\n            form.save()\n            return redirect('representative')  # เปลี่ยนไปที่หน้า 'representative' หลังจากบันทึก\n    else:\n        form = VillagepublicForm()\n    return render(request, 'admin/add_villagepublic.html', {'form': form})\ndef add_income_expenses(request):",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_income_expenses",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def add_income_expenses(request):\n    if request.method == 'POST':\n        form = Income_expensesForm(request.POST, request.FILES)\n        if form.is_valid():\n            form.save()\n            return redirect('income_expenses')  # Redirect to the income_expenses page after saving\n    else:\n        form = Income_expensesForm()\n    return render(request, 'admin/add_income_expenses.html',{'form': form})\ndef edit_representative(request, representative_id=None):",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_representative",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def edit_representative(request, representative_id=None):\n    representative = get_object_or_404(Representative, id=representative_id)\n    if request.method == 'POST':\n        form = RepresentativeForm(request.POST, request.FILES, instance=representative)\n        if form.is_valid():\n            form.save()\n            return redirect('representative')\n    else:\n        form = RepresentativeForm(instance=representative)\n    return render(request, 'admin/edit_representative.html', {'representative': representative, 'form': form})",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_villagepublic",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def edit_villagepublic(request, villagepublic_id=None):\n    villagepublic = get_object_or_404(Villagepublic, id=villagepublic_id)\n    if request.method == 'POST':\n        form = VillagepublicForm(request.POST, request.FILES, instance=villagepublic)\n        if form.is_valid():\n            form.save()\n            return redirect('representative')\n    else:\n        form = VillagepublicForm(instance=villagepublic)\n    return render(request, 'admin/edit_villagepublic.html', {'villagepublic': villagepublic, 'form': form})",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_activity_news",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def edit_activity_news(request, activity_news_id=None):\n    activity_news = get_object_or_404(Activity_news, id=activity_news_id)\n    if request.method == 'POST':\n        form = Activity_newsForm(request.POST, request.FILES, instance=activity_news)\n        if form.is_valid():\n            form.save()\n            return redirect('activity_news')  # Redirect to the activity_news list page after saving\n    else:\n        form = Activity_newsForm(instance=activity_news)\n    return render(request, 'admin/edit_activity_news.html', {'activity_news': activity_news, 'form': form})",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_income_expenses",
+        "kind": 2,
+        "importPath": "panitsa.views",
+        "description": "panitsa.views",
+        "peekOfCode": "def edit_income_expenses(request, income_expenses_id):\n    income_expenses_ = get_object_or_404(Income_expenses, pk=income_expenses_id)\n    if request.method == 'POST':\n        form = Income_expensesForm(request.POST, instance=income_expenses_)\n        if form.is_valid():\n            form.save()\n            # Redirect to the updated details page or another appropriate page\n            return redirect('income_expenses')\n    else:\n        form = Income_expensesForm(instance=income_expenses_)",
+        "detail": "panitsa.views",
+        "documentation": {}
+    },
+    {
+        "label": "CustomLoginView",
+        "kind": 6,
+        "importPath": "projectWeb.admin",
+        "description": "projectWeb.admin",
+        "peekOfCode": "class CustomLoginView(LoginView):\n    template_name = 'admin/login.html' \nclass EditView(DetailView):\n    template_name = 'admin/add_edit.html'\nclass RepresentativeAdmin(admin.ModelAdmin):\n    list_display = ('first_name', 'last_name', 'position', 'phone_number', 'image_url')\n    template_name = 'admin/add_representative.html'",
+        "detail": "projectWeb.admin",
+        "documentation": {}
+    },
+    {
+        "label": "EditView",
+        "kind": 6,
+        "importPath": "projectWeb.admin",
+        "description": "projectWeb.admin",
+        "peekOfCode": "class EditView(DetailView):\n    template_name = 'admin/add_edit.html'\nclass RepresentativeAdmin(admin.ModelAdmin):\n    list_display = ('first_name', 'last_name', 'position', 'phone_number', 'image_url')\n    template_name = 'admin/add_representative.html'",
+        "detail": "projectWeb.admin",
+        "documentation": {}
+    },
+    {
+        "label": "RepresentativeAdmin",
+        "kind": 6,
+        "importPath": "projectWeb.admin",
+        "description": "projectWeb.admin",
+        "peekOfCode": "class RepresentativeAdmin(admin.ModelAdmin):\n    list_display = ('first_name', 'last_name', 'position', 'phone_number', 'image_url')\n    template_name = 'admin/add_representative.html'",
+        "detail": "projectWeb.admin",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "projectWeb.asgi",
+        "description": "projectWeb.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "projectWeb.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-e@_2vnbafs-)5a-#@$1b(_n_(18v0b8dp$cwc+6q7t7-u%4w)$'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['127.0.0.1']\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-e@_2vnbafs-)5a-#@$1b(_n_(18v0b8dp$cwc+6q7t7-u%4w)$'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'panitsa',",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'panitsa',\n]\nMIDDLEWARE = [",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'projectWeb.urls'",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "ROOT_URLCONF = 'projectWeb.urls'\nBASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\n            os.path.join(BASE_DIR,  'templates'),\n        ],\n        'APP_DIRS': True,\n        'OPTIONS': {",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\n            os.path.join(BASE_DIR,  'templates'),\n        ],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\n            os.path.join(BASE_DIR,  'templates'),\n        ],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'projectWeb.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.mysql\",\n        \"NAME\": \"webproject\",\n        \"USER\": \"root\",\n        \"PASSWORD\": \"root\",\n        \"HOST\": \"127.0.0.1\",",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.mysql\",\n        \"NAME\": \"webproject\",\n        \"USER\": \"root\",\n        \"PASSWORD\": \"root\",\n        \"HOST\": \"127.0.0.1\",\n        \"PORT\": \"3306\",\n    }\n}",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'admin:login'",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'admin:login'\nLOGIN_REDIRECT_URL = '/admin/add_edit/'",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'admin:login'\nLOGIN_REDIRECT_URL = '/admin/add_edit/'\nSTATIC_URL = '/static/'",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'admin:login'\nLOGIN_REDIRECT_URL = '/admin/add_edit/'\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'admin:login'\nLOGIN_REDIRECT_URL = '/admin/add_edit/'\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "LOGIN_URL = 'admin:login'\nLOGIN_REDIRECT_URL = '/admin/add_edit/'\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = '/admin/add_edit/'\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "projectWeb.settings",
+        "description": "projectWeb.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "projectWeb.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "projectWeb.urls",
+        "description": "projectWeb.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/login/', admin.site.urls),\n    path('', include('panitsa.urls')),\n    path('admin/', CustomLoginView.as_view(), name='admin_login'),\n    path('admin/add_edit/',EditView.as_view(), name='admin_edit'),\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "projectWeb.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "projectWeb.wsgi",
+        "description": "projectWeb.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "projectWeb.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'projectWeb.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

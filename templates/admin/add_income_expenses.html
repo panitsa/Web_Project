@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+    text-align: center;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    }
+
+    .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    form label {
+    margin-bottom: 5px;
+    }
+
+    form input, form button {
+    margin-bottom: 15px;
+    }
+
+    button {
+    background-color: #ffff00;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+</style>
+<a href="{% url 'admin_edit' %}" class="action-links">หน้าแรก</a>
+<h1>เพิ่ม รายรับรายจ่าย</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">บันทึก</button>
+    </form>
+</html>

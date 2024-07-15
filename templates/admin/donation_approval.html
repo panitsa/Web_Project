@@ -1,0 +1,34 @@
+<!-- templates/admin/donation_approval.html -->
+
+<h2>การตรวจสอบข้อมูลการบริจาค</h2>
+<a href="{% url 'admin_edit' %}" class="action-links">หน้าแรก</a>
+<table>
+<thead>
+    <tr>
+        <th>วันที่</th>
+        <th>ชื่อ-สกุล</th>
+        <th>จำนวนเงิน</th>
+        <th>การยืนยัน</th>
+        <th>ไฟล์แนบ</th>
+    </tr>
+</thead>
+<tbody>
+    {% for donation in donations %}
+    <tr>
+        <td>{{ donation.date }}</td>
+        <td>{{ donation.name }}</td>
+        <td>{{ donation.amount }}</td>
+        <td>
+        <a href="{% url 'approve_donation' donation.id %}">ยืนยัน</a>
+        </td>
+        <td>
+        {% if donation.transfer_receipt %}
+        <a href="{{ donation.transfer_receipt.url }}">ดาวน์โหลดไฟล์แนบ</a>
+        {% else %}
+        
+        {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>

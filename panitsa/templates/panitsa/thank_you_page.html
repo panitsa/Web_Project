@@ -1,0 +1,9 @@
+
+<h2>ขอบคุณสำหรับการบริจาคของคุณ!</h2>
+<p>ข้อมูลการบริจาคของคุณได้ถูกส่งไปยังแอดมินเพื่อทำการตรวจสอบแล้ว</p>
+<a href="{% url 'home' %}" class="action-links">หน้าแรก</a>
+{% if donation.approved %}
+    <a href="{% url 'generate_donation_pdf' donation.id %}" class="btn btn-primary">ดาวน์โหลด PDF</a>
+{% else %}
+    <p>กรุณารอการยืนยันจากแอดมิน</p>
+{% endif %}

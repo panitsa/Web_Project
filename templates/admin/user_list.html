@@ -1,0 +1,90 @@
+<!-- templates/admin/user_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายชื่อผู้ใช้</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .action-links {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .action-links:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #dee2e6;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #e9ecef;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .chat-link {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .chat-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="{% url 'admin_edit' %}" class="action-links">หน้าแรก</a>
+    <div class="container">
+        <h1>รายชื่อผู้ใช้</h1>
+        <table>
+            <tr>
+                <th>Username</th>
+                <th>Action</th>
+            </tr>
+            {% for user in users %}
+                {% if not user.is_staff %}
+                    <tr>
+                        <td>{{ user.username }}</td>
+                        <td>
+                            <a href="{% url 'admin_road_chat' user.id %}" class="chat-link">เรื่องถนน</a> |
+                            <a href="{% url 'admin_water_chat' user.id %}" class="chat-link">เรื่องน้ำ</a> |
+                            <a href="{% url 'admin_electricity_chat' user.id %}" class="chat-link">เรื่องไฟฟ้า</a> |
+                            <a href="{% url 'admin_general_chat' user.id %}" class="chat-link">เรื่องทั่วไป</a>
+                        </td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donation Form</title>
+    <style>
+    
+        .form-section {
+            margin-bottom: 20px;
+            width: 100%; /* ตั้งค่าความกว้างเต็มหน้าจอ */
+            text-align: left; /* จัดการให้ข้อความอยู่ซ้าย */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const paymentMethodInputs = document.querySelectorAll('input[name="payment_method"]');
+            const transferReceiptField = document.querySelector('#transfer_receipt_field');
+            const bankDetails = document.getElementById('bank_details');
+
+            function updateFormFields() {
+                const selectedMethod = document.querySelector('input[name="payment_method"]:checked').value;
+                if (selectedMethod === 'transfer') {
+                    transferReceiptField.style.display = '';
+                    bankDetails.style.display = '';
+                } else {
+                    transferReceiptField.style.display = 'none';
+                    bankDetails.style.display = 'none';
+                }
+            }
+
+            paymentMethodInputs.forEach(input => {
+                input.addEventListener('change', updateFormFields);
+            });
+
+            // Initial update on page load
+            updateFormFields();
+
+            const copyButton = document.getElementById('copy_button');
+            copyButton.addEventListener('click', function () {
+                const accountNumber = document.getElementById('account_number').innerText;
+                navigator.clipboard.writeText(accountNumber).then(function () {
+                    alert('คัดลอกเลขบัญชีเรียบร้อยแล้ว');
+                }, function () {
+                    alert('ไม่สามารถคัดลอกเลขบัญชีได้');
+                });
+            });
+        });
+    </script>
+</head>
+<a href="{% url 'home' %}" class="action-links">หน้าแรก</a>
+<body>
+    <h2>แบบฟอร์มการบริจาค</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-section">
+            <label for="id_payment_method">Payment method:</label><br>
+            {% for choice in form.payment_method %}
+                {{ choice.tag }} {{ choice.choice_label }}<br>
+            {% endfor %}
+        </div>
+        
+        <div class="form-section">
+            <label for="id_date">วันที่:</label><br>
+            {{ form.date }}
+        </div>
+        
+        <div class="form-section">
+            <label for="id_subject">เรื่อง:</label><br>
+            {{ form.subject }}
+        </div>
+        
+        <div class="form-section">
+            <label for="id_name">ชื่อ-นามสกุล:</label><br>
+            {{ form.name }}
+        </div>
+        
+        <div class="form-section">
+            <label for="id_address">ที่อยู่:</label><br>
+            {{ form.address }}
+        </div>
+        
+        <div class="form-section">
+            <label for="id_phone">เบอร์โทร:</label><br>
+            {{ form.phone }}
+        </div>
+        
+        <div class="form-section">
+            <label for="id_amount">จำนวนเงิน (ตัวเลข):</label><br>
+            {{ form.amount }}
+        </div>
+        
+        <div class="form-section">
+            <label for="id_amount_text">จำนวนเงิน (ตัวอักษร):</label><br>
+            {{ form.amount_text }}
+        </div>
+        
+        <div class="form-section">
+            <label for="id_receiver_name">ชื่อผู้รับบริจาค:</label><br>
+            {{ form.receiver_name }}
+        </div>
+        
+        <div id="transfer_receipt_field" class="form-section" style="display: none;">
+            <label for="id_transfer_receipt">Transfer receipt:</label><br>
+            {{ form.transfer_receipt }}
+        </div>
+        
+        <div id="bank_details" class="form-section" style="display: none;">
+            <p>ชื่อธนาคาร: ธนาคารกรุงไทย</p>
+            <p>ชื่อที่ต้องโอน: บ้านสร้างเม็ก</p>
+            <p>เลขบัญชี: <span id="account_number">123-456-7890</span> <button type="button" id="copy_button">คัดลอก</button></p>
+        </div>
+        
+        <button type="submit">ส่งข้อมูล</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายรับรายจ่าย</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        text-align: center;
+        background-color: #f7f7f7;
+        font-family: 'Arial', sans-serif;
+      }
+    
+      h1 {
+        color: #333;
+      }
+    
+      .news-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    
+      .news-item {
+        margin: 10px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        max-width: 300px;
+      }
+    
+      img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        height: auto;
+        border-radius: 10px;
+      }
+    
+      p {
+        font-size: 18px;
+        line-height: 2.4;
+      }
+    
+      p.expenses {
+        font-size: 18px;
+        line-height: 1.6;
+        color: red;
+      }
+    
+      @media screen and (max-width: 600px) {.news-container {flex-direction: column;}
+      }
+    </style>
+
+
+<body>
+  <div class="container">
+    <a href="{% url 'home' %}" class="action-links">หน้าแรก</a>
+  <h1>รายรับ-รายจ่าย</h1>
+  {% for entry in income_expenses %}
+    <div class="news-item">
+      <p>วันที่: {{ entry.date|date:"j/n/Y" }} | เวลา: {{ entry.time|time:"G:i" }}</p>
+      {% if entry.image %}
+        <img src="{{ entry.image.url }}" alt="Receipt">
+      {% endif %}
+      <p>รายรับ: {{ entry.income }}</p>
+      <p class="expenses">รายจ่าย: {{ entry.expenses }}</p>
+    </div>
+  {% endfor %}
+</body>
+</html>

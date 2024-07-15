@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลสมาชิกผู้แทนในหมู่บ้าน</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #FFFFFF;
+            padding: 30px;
+        }
+
+        .members {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .member {
+            max-width: 800px;
+            background-color: white;
+            padding: 50px;
+            margin: 20px auto; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .member img {
+            max-width: 100%;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .members {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<a href="{% url 'home' %}" class="action-links">หน้าแรก</a>
+<body>
+    <h1>สมาชิกผู้แทนในหมู่บ้าน</h1>
+    <div class="member">
+        <img src="{{ representatives.0.image.url }}" alt="{{ representatives.0.first_name }} {{ representatives.0.last_name }}">
+        <p>ชื่อ: {{ representatives.0.first_name }}  นามสกุล:  {{ representatives.0.last_name }}</p>
+        <p>ตำแหน่ง: {{ representatives.0.position }}</p>
+        <p>เบอร์โทร: {{ representatives.0.phone_number }}</p>
+    </div>
+    <div class="members">
+        {% for representative in representatives|slice:"1:3" %}
+            <div class="member">
+                <img src="{{ representative.image.url }}" alt="{{ representative.first_name }} {{ representative.last_name }}">
+                <p>ชื่อ: {{ representative.first_name }}  นามสกุล:  {{ representative.last_name }}</p>
+                <p>ตำแหน่ง: {{ representative.position }}</p>
+                <p>เบอร์โทร: {{ representative.phone_number }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+    
+    <h1>สมาชิกอาสาสมัครสาธารณสุขประจำหมู่บ้าน (อสม)</h1>
+    <div class="members">
+        <div class="member">
+            <img src="{{ asom_representatives.0.image.url }}" alt="{{ asom_representatives.0.first_name }} {{ asom_representatives.0.last_name }}">
+            <p>ชื่อ: {{ asom_representatives.0.first_name }}  นามสกุล:  {{ asom_representatives.0.last_name }}</p>
+            <p>ตำแหน่ง: {{ asom_representatives.0.position }}</p>
+            <p>เบอร์โทร: {{ asom_representatives.0.phone_number }}</p>
+        </div>
+    </div>
+
+<div class="members">
+    {% for asom_representative in asom_representatives|slice:"2:10" %}
+        <div class="member">
+            <img src="{{ asom_representative.image.url }}" alt="{{ asom_representative.first_name }} {{ asom_representative.last_name }}">
+            <p>ชื่อ: {{ asom_representative.first_name }}  นามสกุล:  {{ asom_representative.last_name }}</p>
+            <p>ตำแหน่ง: {{ asom_representative.position }}</p>
+            <p>เบอร์โทร: {{ asom_representative.phone_number }}</p>
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>

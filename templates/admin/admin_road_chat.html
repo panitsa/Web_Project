@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>แชทเรื่องถนน (Admin)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .action-links {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .chat-container {
+            margin-bottom: 80px;
+        }
+        .message {
+            clear: both;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 60%;
+            position: relative;
+            word-wrap: break-word;
+        }
+        .user-message {
+            background-color: #f9f9f9;
+            text-align: left;
+            float: left; /* ข้อความผู้ใช้ทางซ้าย */
+        }
+        .admin-message {
+            background-color: #e1f5fe;
+            text-align: right;
+            float: right; /* ข้อความแอดมินทางขวา */
+        }
+        .message-content {
+            padding-bottom: 10px;
+        }
+        .user-message img {
+            max-width: 50%;
+            float: left; /* รูปภาพผู้ใช้ทางซ้าย */
+            display: block;
+            margin-top: 10px;
+        }
+        .admin-message img {
+            max-width: 50%;
+            float: right; /* รูปภาพแอดมินทางขวา */
+            display: block;
+            margin-top: 10px;
+        }
+        .message small {
+            display: block;
+            font-size: 10px;
+            color: #888;
+            text-align: left; /* แสดงวันที่และเวลาทางซ้าย */
+            margin-top: 5px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .form-container {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="{% url 'admin_user_list' %}" class="action-links">หน้าข้อมูล</a>
+    <div class="chat-container">
+        <h1>เรื่องถนน (Admin)</h1>
+        
+        {% if messages %}
+            {% for message in messages %}
+                <div class="message {% if message.admin_message %}admin-message{% else %}user-message{% endif %} clearfix">
+                    <div class="message-content">
+                        {{ message.message }}
+                        {% if message.image %}
+                            <br><img src="{{ message.image.url }}" alt="Uploaded Image">
+                        {% endif %}
+                    </div>
+                    <small>{{ message.timestamp|date:"F j, Y, P" }}</small>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    
+    <div class="form-container">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" name="category" value="road" class="button">ส่ง</button>
+        </form>
+    </div>
+</body>
+</html>

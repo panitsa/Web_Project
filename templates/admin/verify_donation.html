@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตรวจสอบการบริจาค</title>
+</head>
+<body>
+    <h1>ตรวจสอบการบริจาค</h1>
+    <p>วันที่: {{ donation.date }}</p>
+    <p>เรื่อง: {{ donation.subject }}</p>
+    <p>ชื่อ-สกุล: {{ donation.name }}</p>
+    <p>ที่อยู่: {{ donation.address }}</p>
+    <p>เบอร์โทร: {{ donation.phone }}</p>
+    <p>จำนวน: {{ donation.amount }}</p>
+    <p>จำนวนเงิน (ตัวอักษร): {{ donation.amount_text }}</p>
+    <p>ชื่อธนาคาร: บ้านสร้างเม็ก</p>
+    <p>เลขบัญชี: 123-456-7890</p>
+    <p>ผู้รับบริจาค: {{ donation.receiver_name }}</p>
+    <p>สลิปการโอนเงิน: <a href="{{ donation.receipt_url }}" target="_blank">ดูสลิป</a></p>
+    <form method="post" action="{% url 'admin_verify_donation' %}?{{ request.GET.urlencode }}">
+        {% csrf_token %}
+        <button type="submit">ยืนยันการบริจาค</button>
+    </form>
+</body>
+</html>

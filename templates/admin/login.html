@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ Admin</title>
+{% extends 'admin/login.html' %}
+{% block content %}
+    <div id="login-form" style="max-width: 400px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+        <form method="post" action="{% url 'admin_login' %}" style="margin-top: 20px;">
+            {% csrf_token %}
+            
+            <div style="margin-bottom: 15px;">
+                <label for="{{ form.username.id_for_label }}" style="color: #333; display: block; margin-bottom: 5px;">ชื่อผู้ใช้</label>
+                <input type="text" name="{{ form.username.name }}" id="{{ form.username.id_for_label }}" />
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="{{ form.password.id_for_label }}" style="color: #333; display: block; margin-bottom: 5px;">รหัสผ่าน</label>
+                <input type="password" name="{{ form.password.name }}" id="{{ form.password.id_for_label }}" />
+            </div>
+            
+            {{ form.errors }}
+            <button type="submit" style="background-color: #fbff00; color: #000000; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; width: 100%;">เข้าสู่ระบบ</button>
+        </form>
+    </div>
+{% endblock %}
+{% block branding %}
+    
+    <h1 id="site-name" style="font-size: 24px; text-align: center; margin-bottom: 20px; color: #000000;">เข้าสู่ระบบล็อกอิน</h1>
+{% endblock %}
+{% if form.errors.username or form.errors.password %}
+    <p class="error-message">ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</p>
+{% endif %}
+
+</html>

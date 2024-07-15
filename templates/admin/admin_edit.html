@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจัดการข้อมูลหมู่บ้าน</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 30px;
+            color: #333; /* สีตัวอักษร */
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #00cccc; /* สีพื้นหลังของ header-container */
+            border-radius: 8px;
+            color: #000000; /* สีตัวอักษรใน header-container */
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 15px;
+        }
+
+        .purple-button, .purple-button-left {
+            background-color: #33ff33;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #000000; /* สีตัวอักษรของปุ่ม */
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .purple-button:hover, .purple-button-left:hover {
+            background-color: #97ff2f; /* เปลี่ยนสีพื้นหลังเมื่อโฮเวอร์ */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button-container">
+        <a href="{% url 'admin_login' %}" class="purple-button">ออกจากระบบ</a>
+    </div>
+
+    <div class="header-container">
+        <h2 class="header">สมาชิกผู้แทนในหมู่บ้าน</h2>
+        <div class="button-container">
+            <a href="{% url 'add_representative' %}" class="purple-button-left">เพิ่ม</a>
+            {% if representative %}
+                <a href="{% url 'admin_representatives' %}" class="purple-button-left">แก้ไข</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="header-container">
+        <h2 class="header">สมาชิกอาสาสมัครสาธารณสุขประจำหมู่บ้าน (อสม)</h2>
+        <div class="button-container">
+            <a href="{% url 'add_villagepublic' %}" class="purple-button-left">เพิ่ม</a>
+            {% if villagepublic %}
+                <a href="{% url 'admin_villagepublic' %}" class="purple-button-left">แก้ไข</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="header-container">
+        <h2 class="header">ข่าวสารกิจกรรม</h2>
+        <div class="button-container">
+            <a href="{% url 'add_activity_news' %}" class="purple-button-left">เพิ่ม</a>
+            {% if activity_news %}
+                <a href="{% url 'admin_activity_news' %}" class="purple-button-left">แก้ไข</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="header-container">
+        <h2 class="header">รายรับรายจ่าย</h2>
+        <div class="button-container">
+            <a href="{% url 'add_income_expenses' %}" class="purple-button-left">เพิ่ม</a>
+            {% if income_expenses %}
+                <a href="{% url 'admin_income_expenses' %}" class="purple-button-left">แก้ไข</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="header-container">
+        <h2 class="header">ตอบกลับการแจ้งความเดือดร้อน</h2>
+        <div class="user-item">
+            <a href="{% url 'admin_user_list'  %}" class="purple-button-left">แชทตอบกลับ</a>
+        </div>
+    </div>
+    
+    <div class="header-container">
+        <h2 class="header">ยืนยันการบริจาค</h2>
+        <div class="button-container">
+            
+                <a href="{% url 'admin_dashboard'%}" class="purple-button-left"> ตรวจสอบการบริจาค</a>
+        </div>
+    </div>
+</body>
+</html>
+
