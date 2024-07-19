@@ -3,15 +3,20 @@ from .forms import *
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from django.http import *
 from django.conf import settings
 from reportlab.pdfbase import pdfmetrics
 import os
 import io
-from io import BytesIO
-from reportlab.lib.pagesizes import letter, A4
+from reportlab.lib.pagesizes import  A4
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
+from datetime import datetime
+from babel.dates import format_date 
+import locale
+
+locale.setlocale(locale.LC_TIME, 'th_TH.UTF-8')
 
 
 def signup(request):
@@ -71,7 +76,8 @@ def activity_news(request):
 
 def income_expenses(request):
     income_expenses = Income_expenses.objects.all()
-    return render(request, 'panitsa/income_expenses.html',{'income_expenses':income_expenses})
+    donations = Donation.objects.filter(approved=True) 
+    return render(request, 'panitsa/income_expenses.html',{'income_expenses':income_expenses, 'donations': donations})
 
 
 #admin
@@ -451,6 +457,7 @@ def admin_general_chat(request, user_id):
     })
 
 
+
 def donation_form(request):
     if request.method == 'POST':
         form = DonationForm(request.POST, request.FILES)
@@ -464,13 +471,20 @@ def donation_form(request):
     return render(request, 'panitsa/donation_form.html', {'form': form})
 
 def admin_dashboard(request):
-    donations = Donation.objects.filter(approved=False)
+    donations = Donation.objects.filter(approved=False, rejected=False)
     return render(request, 'admin/donation_approval.html', {'donations': donations})
-
 
 def approve_donation(request, donation_id):
     donation = get_object_or_404(Donation, id=donation_id)
     donation.approved = True
+    donation.rejected = False
+    donation.save()
+    return redirect('admin_dashboard')
+
+def reject_donation(request, donation_id):
+    donation = get_object_or_404(Donation, id=donation_id)
+    donation.approved = False
+    donation.rejected = True
     donation.save()
     return redirect('admin_dashboard')
 
@@ -498,17 +512,13 @@ def generate_donation_pdf(request, donation_id):
     p.drawString(100, 700, f"เบอร์โทร: {donation.phone}")
     p.drawString(100, 680, f"จำนวน: {donation.amount}")
     p.drawString(100, 660, f"จำนวนเงิน (ตัวอักษร): {donation.amount_text}")
-    p.drawString(100, 640, f"ประเภทการบริจาค: {'เงินสด' if donation.payment_method == 'cash' else 'โอนผ่านธนาคาร'}")
+    p.drawString(100, 640, f"ประเภทการบริจาค: โอนผ่านธนาคาร")
 
-    
-    
-    if donation.payment_method == 'transfer':
-        bank_name = "ธนาคารกรุงไทย"
-        bank_account_number = "123-456-7890"
-        p.drawString(100, 640, f"ชื่อธนาคาร: {bank_name}")
-        p.drawString(100, 620, f"เลขบัญชี: {bank_account_number}")
-        
-    p.drawString(300, 600, f"ผู้รับบริจาค: {donation.receiver_name}")
+    bank_name = "ธนาคารกรุงไทย"
+    bank_account_number = "123-456-7890"
+    p.drawString(100, 620, f"ชื่อธนาคาร: {bank_name}")
+    p.drawString(100, 600, f"เลขบัญชี: {bank_account_number}")
+
     p.showPage()
     p.save()
 
@@ -520,4 +530,33 @@ def generate_donation_pdf(request, donation_id):
 
 def thank_you_page(request, donation_id):
     donation = get_object_or_404(Donation, id=donation_id)
+    
     return render(request, 'panitsa/thank_you_page.html', {'donation': donation})
+
+def admin_monthly_summary(request):
+    income_expenses_summary = Income_expenses.objects.all().order_by('date')
+    donation_summary = Donation.objects.filter(approved=True).order_by('date')
+
+    for entry in income_expenses_summary:
+        entry.formatted_date = format_date(entry.date, format='d MMMM yyyy', locale='th')
+    for donation in donation_summary:
+        donation.formatted_date = format_date(donation.date, format='d MMMM yyyy', locale='th')
+
+    return render(request, 'admin/monthly_summary.html', {
+        'income_expenses_summary': income_expenses_summary,
+        'donation_summary': donation_summary
+    })
+    
+def user_monthly_summary(request):
+    income_expenses_summary = Income_expenses.objects.all().order_by('date')
+    donation_summary = Donation.objects.filter(approved=True).order_by('date')
+
+    for entry in income_expenses_summary:
+        entry.formatted_date = format_date(entry.date, format='d MMMM yyyy', locale='th')
+    for donation in donation_summary:
+        donation.formatted_date = format_date(donation.date, format='d MMMM yyyy', locale='th')
+
+    return render(request, 'panitsa/monthly_summary.html', {
+        'income_expenses_summary': income_expenses_summary,
+        'donation_summary': donation_summary
+    })

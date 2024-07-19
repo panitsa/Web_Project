@@ -36,15 +36,19 @@ class VillagepublicForm(forms.ModelForm):
         model = Villagepublic
         fields = ['image', 'first_name', 'last_name', 'position', 'phone_number']
 
+
+
 class Income_expensesForm(forms.ModelForm):
     class Meta:
         model = Income_expenses
-        fields = ['date', 'time', 'income','expenses','image' ]
+        fields = ['date', 'time', 'income', 'income_amount', 'expenses', 'expenses_amount', 'image']
         widgets = {
             'date': forms.DateInput(attrs={'type': 'date'}),
             'time': forms.TimeInput(attrs={'type': 'time'}),
-        }   
-        
+            'income_amount': forms.NumberInput(attrs={'step': '0.01'}),
+            'expenses_amount': forms.NumberInput(attrs={'step': '0.01'}),
+        }
+
 
 class MessageForm(forms.ModelForm):
     class Meta:
@@ -61,7 +65,7 @@ class DonationForm(forms.ModelForm):
         model = Donation
         fields = [
             'payment_method', 'date', 'subject', 'name', 'address', 
-            'phone', 'amount', 'amount_text', 'receiver_name', 'transfer_receipt'
+            'phone', 'amount', 'amount_text', 'transfer_receipt'
         ]
         widgets = {
             'date': forms.DateInput(attrs={'type': 'date'}),

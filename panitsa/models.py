@@ -42,7 +42,9 @@ class Income_expenses(models.Model):
     date = models.DateField()
     time = models.TimeField()
     income = models.TextField()
+    income_amount = models.DecimalField(max_digits=10, decimal_places=2, default=0) 
     expenses = models.TextField()
+    expenses_amount = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     image = models.ImageField(upload_to='Income_expenses_images/')
         
     class Meta:
@@ -69,14 +71,7 @@ class ChatMessage(models.Model):
 
 class Donation(models.Model):
     PAYMENT_METHOD_CHOICES = [
-        ('cash', 'เงินสด'),
         ('transfer', 'เงินโอน'),
-    ]
-
-    RECEIVER_NAME_CHOICES = [
-        ('นายนิพนธ์ โพธิ์ชัย', 'นายนิพนธ์ โพธิ์ชัย'),
-        ('นายบุญชู ภาคพิม', 'นายบุญชู ภาคพิม'),
-        ('นางศิริกุล ชำนาณเวช', 'นางศิริกุล ชำนาณเวช'),
     ]
 
     payment_method = models.CharField(max_length=10, choices=PAYMENT_METHOD_CHOICES)
@@ -87,9 +82,9 @@ class Donation(models.Model):
     phone = models.CharField(max_length=10)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     amount_text = models.CharField(max_length=255)
-    receiver_name = models.CharField(max_length=255, choices=RECEIVER_NAME_CHOICES)
     transfer_receipt = models.ImageField(upload_to='receipts/', null=True, blank=True)
     approved = models.BooleanField(default=False)
+    rejected = models.BooleanField(default=False)
 
     class Meta:
         db_table = 'Donation'

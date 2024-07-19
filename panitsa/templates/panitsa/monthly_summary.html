@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายงานรายรับรายจ่ายรายเดือน</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<a href="{% url 'home' %}" class="action-links">หน้าแรก</a>
+<body>
+    <h1>รายงานรายรับรายจ่ายรายเดือน</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>วันที่</th>
+                <th>รายการ</th>
+                <th>จำนวนเงินรายรับ (บาท)</th>
+                <th>จำนวนเงินรายจ่าย (บาท)</th>
+                <th>การบริจาค</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in income_expenses_summary %}
+            <tr>
+                <td>{{ entry.formatted_date }}</td>
+                <td>ค่าใช้จ่าย</td>
+                <td>{{ entry.income_amount }}</td>
+                <td>{{ entry.expenses_amount }}</td>
+                <td>-</td>
+            </tr>
+            {% endfor %}
+            {% for donation in donation_summary %}
+            <tr>
+                <td>{{ donation.formatted_date }}</td>
+                <td>บริจาค</td>
+                <td>{{ donation.amount }}</td>
+                <td>0.0</td>
+                <td>{{ donation.amount }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

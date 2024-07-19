@@ -75,5 +75,19 @@
       <p class="expenses">รายจ่าย: {{ entry.expenses }}</p>
     </div>
   {% endfor %}
+
+  <h2>ข้อมูลการบริจาค</h2>
+    <div class="news-container">
+      {% for donation in donations %}
+        <div class="news-item">
+          <p>วันที่: {{ donation.date|date:"j/n/Y" }}</p>
+          <p>ชื่อ-สกุล: {{ donation.name }}</p>
+          <p>จำนวนเงิน: {{ donation.amount }}</p>
+          {% if donation.transfer_receipt %}
+            <img src="{{ donation.transfer_receipt.url }}" alt="Receipt">
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
 </body>
 </html>

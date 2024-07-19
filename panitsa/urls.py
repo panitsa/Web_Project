@@ -59,6 +59,9 @@ urlpatterns = [
     path('approve_donation/<int:donation_id>/', approve_donation, name='approve_donation'),
     path('donation/<int:donation_id>/generate_pdf/', generate_donation_pdf, name='generate_donation_pdf'),
     path('thank_you/<int:donation_id>/', thank_you_page, name='thank_you_page'),
+    path('admin/reject_donation/<int:donation_id>/', reject_donation, name='reject_donation'),
+    path('admin/monthly_summary/', admin_monthly_summary, name='admin_monthly_summary'),
+    path('monthly_summary/', user_monthly_summary, name='user_monthly_summary'),
     
 ]
 

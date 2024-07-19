@@ -2,6 +2,7 @@
 
 <h2>การตรวจสอบข้อมูลการบริจาค</h2>
 <a href="{% url 'admin_edit' %}" class="action-links">หน้าแรก</a>
+
 <table>
 <thead>
     <tr>
@@ -20,6 +21,7 @@
         <td>{{ donation.amount }}</td>
         <td>
         <a href="{% url 'approve_donation' donation.id %}">ยืนยัน</a>
+        <a href="{% url 'reject_donation' donation.id %}">ปฏิเสธ</a>
         </td>
         <td>
         {% if donation.transfer_receipt %}
@@ -32,3 +34,5 @@
     {% endfor %}
 </tbody>
 </table>
+
+

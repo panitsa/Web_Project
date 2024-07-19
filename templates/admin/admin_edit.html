@@ -90,6 +90,7 @@
     <div class="header-container">
         <h2 class="header">รายรับรายจ่าย</h2>
         <div class="button-container">
+            <a href="{% url 'admin_monthly_summary' %}" class="purple-button-left">รายงานรายรับรายจ่ายรายเดือน</a>
             <a href="{% url 'add_income_expenses' %}" class="purple-button-left">เพิ่ม</a>
             {% if income_expenses %}
                 <a href="{% url 'admin_income_expenses' %}" class="purple-button-left">แก้ไข</a>
@@ -100,17 +101,15 @@
     <div class="header-container">
         <h2 class="header">ตอบกลับการแจ้งความเดือดร้อน</h2>
         <div class="user-item">
-            <a href="{% url 'admin_user_list'  %}" class="purple-button-left">แชทตอบกลับ</a>
+            <a href="{% url 'admin_user_list' %}" class="purple-button-left">แชทตอบกลับ</a>
         </div>
     </div>
-    
+
     <div class="header-container">
         <h2 class="header">ยืนยันการบริจาค</h2>
         <div class="button-container">
-            
-                <a href="{% url 'admin_dashboard'%}" class="purple-button-left"> ตรวจสอบการบริจาค</a>
+            <a href="{% url 'admin_dashboard' %}" class="purple-button-left">ตรวจสอบการบริจาค</a>
         </div>
     </div>
 </body>
 </html>
-
